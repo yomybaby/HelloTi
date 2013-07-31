@@ -1,0 +1,18 @@
+
+
+/* Wirte Post */
+
+"#contentTextArea" : {
+	top: 10,
+	left : 10,
+	right : 10,
+	height : 150
+},
+
+"#saveButton" : {
+	title : 'Save'
+},
+
+"#cancelButton" : {
+	title : 'Cancel'
+}

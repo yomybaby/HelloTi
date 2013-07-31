@@ -1,0 +1,12 @@
+<Alloy>
+	<TabGroup>
+		<Tab title="Post List" icon="KS_nav_ui.png">
+			<Require src="postList"></Require>
+		</Tab>
+		<Tab title="Setting" icon="KS_nav_views.png">
+			<Window>
+				<Button id="logoutButton">Logout</Button>
+			</Window>
+		</Tab>
+	</TabGroup>
+</Alloy>

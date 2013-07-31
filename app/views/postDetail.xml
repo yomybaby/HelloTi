@@ -1,0 +1,8 @@
+<Alloy>
+	<Window title="Post Detail">
+		<ImageView class="pic"></ImageView>
+		<Label id="name" class="userName">User Name</Label>
+		<TextArea id="content" class="contentDetail">Post Content Detail. 1kdsjfklasnvdsiojgnqklnfaklsjflks</TextArea>
+		<Label id="date" class="date">0000.00.00</Label>
+	</Window>
+</Alloy>
