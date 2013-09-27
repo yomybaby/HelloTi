@@ -1,5 +1,5 @@
 # 실습용 앱 실행방법
-1. xml에서 ListView를 사용했기 때문에 Alloy를 1.2.x 이상 버전이 필요하다. [alloy gir repository에서 source로 부터 설치를 한다.](https://github.com/appcelerator/alloy#from-source)
+1. xml에서 ListView를 사용했기 때문에 Alloy를 1.2.x 이상 버전이 필요하다. (최신버전 설치)
 1. 먼저 Alloy 프로젝트이면서 ACS가 활성화된 Ti Mobile 프로젝트를 하나 만듭니다.
 1. tiapp.xml을 열어 `<android xmlns:android="http://schemas.android.com/apk/res/android"/>`는 삭제하고 아래 코드를 붙여넣습니다. (FACEBOOK_APP_ID는 본인의 것으로 교체합니다.)
 
