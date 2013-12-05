@@ -1,0 +1,30 @@
+
+".container" : {
+	layout:'vertical'  
+}
+
+".padding" : {
+	left: 10,
+	right : 10,
+	top : 10
+}
+
+"#saveBtn" : {
+	width : Ti.UI.FILL,
+	height : 40,
+	title : '저장',
+	backgroundColor : '#e67e22',
+	color : 'white'
+}
+
+"#title" : {
+	width : Ti.UI.FILL,
+	height : 40,
+	borderColor : 'gray'
+}
+
+"#content" : {
+	width : Ti.UI.FILL,
+	height : 100,
+	borderColor : 'gray'
+}

@@ -13,4 +13,11 @@
 
 var Cloud = require('ti.cloud');
 
-Cloud.debug = true;
+var fb = require('facebook');
+fb.appid = Ti.App.Properties.getString('ti.facebook.appid');
+
+
+
+if(ENV_DEV){
+	Cloud.debug = true;
+}

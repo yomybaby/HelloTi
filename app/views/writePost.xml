@@ -1,0 +1,7 @@
+<Alloy>
+	<Window class="container">
+		<Button id="saveBtn" class="padding"></Button>
+		<TextField id="title" class="padding"></TextField>
+		<TextArea id="content" class="padding"></TextArea>
+	</Window>
+</Alloy>
