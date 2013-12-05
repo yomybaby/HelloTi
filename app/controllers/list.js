@@ -46,7 +46,14 @@ postCol.reset([
 $.listView.addEventListener('itemclick', function(e) {
 	if(e.itemId){
 		var clickedModel = postCol.get(e.itemId);
-		alert(clickedModel.attributes);
+		
+		// detail 컨트롤러 만들고, 모델을 넘겨서, detail을 연다.
+		
+		var detailC = Alloy.createController('detail',{
+			model : clickedModel
+		});
+		
+		detailC.getView().open();
 	}
 });
 
