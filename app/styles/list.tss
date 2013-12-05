@@ -25,3 +25,10 @@
 ".black" : {
 	color: 'black'
 }
+
+".likeBtn" : {
+	right : 10,
+	top : 10,
+	text : '좋아요',
+	color : 'blue'
+}

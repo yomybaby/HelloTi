@@ -4,10 +4,12 @@
 			<Templates>
 				<ItemTemplate name="postTemplate">
 					<Label bindId="titleLabel" class="titleLabel"></Label>
+					<Label bindId="likeBtn" class="likeBtn"></Label>
 				</ItemTemplate>
 				<ItemTemplate name="longPostTemplate" class="longTemplate">
 					<Label bindId="titleLabel" class="titleLabel black"></Label>
 					<Label bindId="contentLabel" class="contentLabel"></Label>
+					<Label bindId="likeBtn" class="likeBtn"></Label>
 				</ItemTemplate>
 			</Templates>
 			<ListSection id="section">

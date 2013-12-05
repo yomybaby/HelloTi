@@ -12,7 +12,10 @@ postCol.on('reset',function(col){
 			contentLabel : {
 				text : model.get('content')
 			},
-			template : model.get('content')?'longPostTemplate':'postTemplate'
+			template : model.get('content')?'longPostTemplate':'postTemplate',
+			properties : {
+				itemId : model.id
+			}
 		});
 	});
 	$.section.setItems(items);
@@ -20,19 +23,30 @@ postCol.on('reset',function(col){
 
 postCol.reset([
 	{
+		id : 1,
 		title: '제목1',
 		content : '내용1'	
 	},
 	{
+		id : 2,
 		title: '제목2',
 		content : '내용2'	
 	},
 	{
+		id : 3,
 		title: '제목3',
 		content : '내용3'	
 	},
 	{
+		id : 4,
 		title : '제목4'
 	}
 ]);
+
+$.listView.addEventListener('itemclick', function(e) {
+	if(e.itemId){
+		var clickedModel = postCol.get(e.itemId);
+		alert(clickedModel.attributes);
+	}
+});
 
