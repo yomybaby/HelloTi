@@ -3,7 +3,11 @@
 		<ListView id="listView">
 			<Templates>
 				<ItemTemplate name="postTemplate">
-					<Label bindId="titleLabel" class="titleLabel">Wow</Label>
+					<Label bindId="titleLabel" class="titleLabel"></Label>
+				</ItemTemplate>
+				<ItemTemplate name="longPostTemplate" class="longTemplate">
+					<Label bindId="titleLabel" class="titleLabel black"></Label>
+					<Label bindId="contentLabel" class="contentLabel"></Label>
 				</ItemTemplate>
 			</Templates>
 			<ListSection id="section">

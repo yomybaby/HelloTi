@@ -5,8 +5,23 @@
 
 ".titleLabel" : {
 	left: 10,
+	top : 10,
 	font : {
 		fontSize : 20
 	},
 	color : 'red'
+}
+
+".contentLabel" : {
+	left: 10,
+	top : 35,
+	color : 'gray'
+}
+
+".longTemplate":{
+	height : 80
+}
+
+".black" : {
+	color: 'black'
 }

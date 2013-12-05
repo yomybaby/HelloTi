@@ -9,7 +9,10 @@ postCol.on('reset',function(col){
 			titleLabel : {
 				text : model.get('title')
 			},
-			template : 'postTemplate'
+			contentLabel : {
+				text : model.get('content')
+			},
+			template : model.get('content')?'longPostTemplate':'postTemplate'
 		});
 	});
 	$.section.setItems(items);
