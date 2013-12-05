@@ -1,10 +1,11 @@
 
 var curWin = $.list;
 
-var postCol = Alloy.createCollection('post');
-// Alloy.Collection('post').instance();
+var postCol = Alloy.Collections.instance('post');
+//Alloy.createCollection('post');
 
-postCol.on('reset',function(col){
+
+postCol.on('reset add',function(col){
 	var items = [];
 	postCol.each(function(model){
 		items.push({

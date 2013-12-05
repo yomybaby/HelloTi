@@ -12,6 +12,7 @@
 
 
 var Cloud = require('ti.cloud');
+Cloud.sessionId = Ti.App.Properties.getString('acs_sessionId');
 
 var fb = require('facebook');
 fb.appid = Ti.App.Properties.getString('ti.facebook.appid');
