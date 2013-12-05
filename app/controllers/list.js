@@ -1,4 +1,6 @@
 
+var curWin = $.list;
+
 var postCol = Alloy.createCollection('post');
 // Alloy.Collection('post').instance();
 
@@ -53,7 +55,9 @@ $.listView.addEventListener('itemclick', function(e) {
 			model : clickedModel
 		});
 		
-		detailC.getView().open();
+		Alloy.Globals.mainTabGroup.activeTab.open(
+			detailC.getView()
+		);
 	}
 });
 

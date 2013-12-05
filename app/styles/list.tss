@@ -1,6 +1,6 @@
 
 ".container" : {
-  
+	title : 'Post List'
 }
 
 ".titleLabel" : {
