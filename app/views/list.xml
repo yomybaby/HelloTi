@@ -1,13 +1,12 @@
 <Alloy>
 	<Window class="container">
-		<ListView>
+		<ListView id="listView">
 			<Templates>
 				<ItemTemplate name="postTemplate">
-					<Label class="titleLabel">Wow</Label>
+					<Label bindId="titleLabel" class="titleLabel">Wow</Label>
 				</ItemTemplate>
 			</Templates>
-			<ListSection>
-				<ListItem template="postTemplate"></ListItem>
+			<ListSection id="section">
 			</ListSection>
 		</ListView>
 	</Window>
