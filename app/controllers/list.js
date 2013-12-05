@@ -23,27 +23,12 @@ postCol.on('reset',function(col){
 	$.section.setItems(items);
 });
 
-postCol.reset([
-	{
-		id : 1,
-		title: '제목1',
-		content : '내용1'	
-	},
-	{
-		id : 2,
-		title: '제목2',
-		content : '내용2'	
-	},
-	{
-		id : 3,
-		title: '제목3',
-		content : '내용3'	
-	},
-	{
-		id : 4,
-		title : '제목4'
+postCol.fetch({
+	data : {
+		page: 1,
+    	per_page: 2
 	}
-]);
+});
 
 $.listView.addEventListener('itemclick', function(e) {
 	if(e.itemId){
