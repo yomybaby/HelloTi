@@ -1,0 +1,14 @@
+<Alloy>
+	<Window class="container">
+		<ListView>
+			<Templates>
+				<ItemTemplate name="postTemplate">
+					<Label class="titleLabel">Wow</Label>
+				</ItemTemplate>
+			</Templates>
+			<ListSection>
+				<ListItem template="postTemplate"></ListItem>
+			</ListSection>
+		</ListView>
+	</Window>
+</Alloy>

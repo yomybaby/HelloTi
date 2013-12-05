@@ -1,0 +1,12 @@
+
+".container" : {
+  
+}
+
+".titleLabel" : {
+	left: 10,
+	font : {
+		fontSize : 20
+	},
+	color : 'red'
+}
