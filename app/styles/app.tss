@@ -1,20 +1,10 @@
-"View" : {
-	borderColor : 'green',
-	borderWidth : 1
-},
 "Label" : {
-	borderColor : 'blue',
-	borderWidth : 1
-},
-"TextArea" : {
-	borderColor : 'red',
-	borderWidth : 1
-},
-"ImageView" : {
-	borderColor : 'pink',
-	borderWidth : 1
-},
+	font : {
+		fontSize : 15
+	}
+}
+
 "Window" : {
-	backgroundColor : '#fff',
+	backgroundColor : 'white',
 	fullscreen : false
 }

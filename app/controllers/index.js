@@ -1,31 +1,22 @@
-var Cloud = require('ti.cloud'),
-	storedSession;
+
+// good
 
 Alloy.Globals.mainTabGroup = $.index;
-$.index.open();
 
-Cloud.debug = true;
-storedSession = Ti.App.Properties.getString("sessionId");
-Ti.API.info(storedSession);
-if(storedSession){
-	// Cloud.setSessionId(storedSession); //이 명령어는 안됨. 버그
-	Cloud.sessionId = storedSession;
-}else{
-	openLoginWindow();
-}
-
-function openLoginWindow(){
-	var signC = Alloy.createController('sign');
-	signC.getView().open();
-}
-
-$.logoutButton.addEventListener('click', function(e) {
-	Cloud.Users.logout(function (e) {
+fb.addEventListener('login', function(e) {
+	
+	Cloud.SocialIntegrations.externalAccountLogin({
+    type: 'facebook',
+	    token: fb.accessToken
+	}, function (e) {
 	    if (e.success) {
-	        //alert('Success: Logged out');
-	        Ti.App.Properties.setString('sessionId',null);
-	        $.index.setActiveTab(0);
-	        openLoginWindow();
+	        var user = e.users[0];
+	        alert('Success:\n' +
+	            'id: ' + user.id + '\n' +
+	            'first name: ' + user.first_name + '\n' +
+	            'last name: ' + user.last_name);
+	        Ti.App.Properties.setString('acs_sessionId',Cloud.sessionId);
+	        fb.logout();
 	    } else {
 	        alert('Error:\n' +
 	            ((e.error && e.message) || JSON.stringify(e)));
@@ -33,3 +24,11 @@ $.logoutButton.addEventListener('click', function(e) {
 	});
 });
 
+
+$.index.addEventListener('open', function(e) {
+	if(!Cloud.sessionId){
+		fb.authorize();
+	}
+});
+
+$.index.open();

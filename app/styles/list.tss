@@ -1,0 +1,34 @@
+
+".container" : {
+	title : 'Post List'
+}
+
+".titleLabel" : {
+	left: 10,
+	top : 10,
+	font : {
+		fontSize : 20
+	},
+	color : 'red'
+}
+
+".contentLabel" : {
+	left: 10,
+	top : 35,
+	color : 'gray'
+}
+
+".longTemplate":{
+	height : 80
+}
+
+".black" : {
+	color: 'black'
+}
+
+".likeBtn" : {
+	right : 10,
+	top : 10,
+	text : '좋아요',
+	color : 'blue'
+}

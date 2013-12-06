@@ -1,18 +1,30 @@
 
+".container" : {
+	layout:'vertical'  
+}
 
-/* Wirte Post */
-
-"#contentTextArea" : {
-	top: 10,
-	left : 10,
+".padding" : {
+	left: 10,
 	right : 10,
-	height : 150
-},
+	top : 10
+}
 
-"#saveButton" : {
-	title : 'Save'
-},
+"#saveBtn" : {
+	width : Ti.UI.FILL,
+	height : 40,
+	title : '저장',
+	backgroundColor : '#e67e22',
+	color : 'white'
+}
 
-"#cancelButton" : {
-	title : 'Cancel'
+"#title" : {
+	width : Ti.UI.FILL,
+	height : 40,
+	borderColor : 'gray'
+}
+
+"#content" : {
+	width : Ti.UI.FILL,
+	height : 100,
+	borderColor : 'gray'
 }

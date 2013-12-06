@@ -11,5 +11,14 @@
 // Alloy.Globals.someGlobalFunction = function(){};
 
 
+var Cloud = require('ti.cloud');
+Cloud.sessionId = Ti.App.Properties.getString('acs_sessionId');
+
 var fb = require('facebook');
-fb.appid = 'FACEBOOK_APP_ID';
+fb.appid = Ti.App.Properties.getString('ti.facebook.appid');
+
+
+
+if(ENV_DEV){
+	Cloud.debug = true;
+}

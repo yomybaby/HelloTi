@@ -1,18 +1,18 @@
 var postCol = Alloy.Collections.instance('post');
 
-function onClickSave(){
+$.saveBtn.addEventListener('click', function(e) {
 	postCol.create({
-		content: $.contentTextArea.value
-	},{
-		wait: true
+		title : $.title.value,
+		content : $.content.value
+	},
+	{
+		wait : true,
+		success : function(){
+			$.title.value = '';
+			$.content.value = '';
+			Alloy.Globals.mainTabGroup.setActiveTab(0);
+			$.title.blur();
+			$.content.blur();
+		}
 	});
-	$.getView().close();
-}
-
-if(OS_IOS){
-	$.saveButton.addEventListener('click', onClickSave);
-	
-	$.cancelButton.addEventListener('click', function(e) {
-		$.getView().close();
-	});
-}
+});

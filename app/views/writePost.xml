@@ -1,14 +1,7 @@
 <Alloy>
-	<Window title="Write Post">
-		<LeftNavButton platform="ios">
-			<Button id="cancelButton"></Button>
-		</LeftNavButton>
-		<RightNavButton platform="ios">
-			<Button id="saveButton"></Button>
-		</RightNavButton>
-		<Menu id="menu" platform="android">
-            <MenuItem id="saveButton" onClick="onClickSave"  showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM" />
-        </Menu>
-		<TextArea id="contentTextArea"></TextArea>
+	<Window class="container">
+		<Button id="saveBtn" class="padding"></Button>
+		<TextField id="title" class="padding"></TextField>
+		<TextArea id="content" class="padding"></TextArea>
 	</Window>
 </Alloy>
