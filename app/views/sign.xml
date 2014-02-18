@@ -1,6 +1,0 @@
-<Alloy>
-	<Window>
-		<Require id="acsLoginWidget" type="widget" src="com.appcelerator.acslogin"></Require>
-		<Button id="fbButton">Facebook Connect</Button>
-	</Window>
-</Alloy>

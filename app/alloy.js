@@ -9,7 +9,3 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
-
-
-var fb = require('facebook');
-fb.appid = 'FACEBOOK_APP_ID';

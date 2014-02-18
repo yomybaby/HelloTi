@@ -1,7 +1,0 @@
-"Window" :{
-	backgroundColor : '#3498db'
-},
-
-"#fbButton":{
-	bottom : 20
-}
