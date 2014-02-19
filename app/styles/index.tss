@@ -1,3 +1,26 @@
+"#writeWindow"  : {
+	layout : 'vertical'
+}
+"#content" :{
+	top : 10,
+	borderColor : 'blue',
+	borderWidth : 2,
+	height : 100,
+	left : 10,
+	right : 10
+}
+".wirteBtn" : {
+	left : 10,
+	right : 10,
+	top : 10,
+	color : 'white'
+}
+"#saveBtn" : {
+	backgroundColor : 'blue'
+}
+"#cancelBtn" : {
+	backgroundColor : 'gray'
+}
 "Window": {
 	backgroundColor: "#fff"
 },
