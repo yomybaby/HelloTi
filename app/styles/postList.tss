@@ -1,0 +1,19 @@
+
+".postT" : {
+	height : 100,
+}
+
+".commentCount" : {
+	left: 10
+}
+
+".postContent" : {
+	top : 10,
+	left: 10
+}
+".time" : {
+	left: 10
+}
+".wrap" : {
+	layout : 'vertical'
+}
