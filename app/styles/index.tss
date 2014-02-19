@@ -18,6 +18,11 @@
 "#saveBtn" : {
 	backgroundColor : 'blue'
 }
+"#saveBtn[platform=android]" : {
+	font : {
+		fontSize: 100
+	}
+}
 "#cancelBtn" : {
 	backgroundColor : 'gray'
 }

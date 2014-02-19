@@ -1,11 +1,12 @@
 <Alloy>
 	<TabGroup>
-		<Tab title="Tab 1" icon="KS_nav_ui.png">
+		<Tab title="Tab 1" icon="iphone/KS_nav_ui.png">
 			<Window id="writeWindow" title="Tab 1">
 				<TextArea id="content"></TextArea>
 				<Button id="saveBtn" class="wirteBtn">저장</Button>				
 				<Button id="cancelBtn" class="wirteBtn">취소</Button>
-				<Label id="length"></Label>				
+				<Label id="length"></Label>		
+				<Label platform="ios">i am iphone</Label>		
 			</Window>
 		</Tab>
 		<Tab title="Tab 2" icon="KS_nav_views.png">

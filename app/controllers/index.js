@@ -9,7 +9,11 @@ $.cancelBtn.addEventListener('click', function(e) {
 });
 
 $.saveBtn.addEventListener('click', function(e) {
-	alert($.content.value);
+	if(OS_IOS){
+		alert('iOS!!!! ' + $.content.value);
+	}else{
+		alert($.content.value);
+	}
 });
 
 
