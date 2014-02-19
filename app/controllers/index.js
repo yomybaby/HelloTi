@@ -9,11 +9,11 @@ $.cancelBtn.addEventListener('click', function(e) {
 });
 
 $.saveBtn.addEventListener('click', function(e) {
-	if(OS_IOS){
-		alert('iOS!!!! ' + $.content.value);
-	}else{
-		alert($.content.value);
-	}
+		var toasty = Alloy.createWidget("toasty");
+		toasty.show($.content.value);
 });
+
+
+
 
 
