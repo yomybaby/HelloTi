@@ -10,14 +10,17 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 
-var postModel = Alloy.createModel('post');
+
+//1. 컬렉션 생성 
 var postCol = Alloy.createCollection('post');
 
-// postCol.create({
-	// title : "콜렉션이 만든 제목",
-	// content : "내용"
-// });
 
+//2. 컬렉션의 이벤트 핸들러를 등록합니다.
+// 데이터를 다 가져오면 reset 이벤트가 발생함
+postCol.on('reset',function(){
+	alert( postCol.models[0].get('title') );
+});
+
+//3. 데이터를 가져옵니다.
 postCol.fetch();
 
-alert( postCol.models[0].get('title') );
