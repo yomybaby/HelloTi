@@ -12,3 +12,11 @@
 
 var postModel = Alloy.createModel('post');
 var postCol = Alloy.createCollection('post');
+
+
+// postModel.set({
+	// title : "제목",
+	// content : "내용"
+// });
+
+alert( postModel.get('title') );
