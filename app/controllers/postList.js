@@ -1,5 +1,5 @@
 var args = arguments[0] || {};
-
+var moment = require('alloy/moment');
 
 //1. 컬렉션 생성 
 // Alloy.Globals.postCol = Alloy.createCollection('post');
@@ -19,7 +19,7 @@ postCol.on('reset add',function(){
 				text : model.get('content')
 			},
 			time : {
-				text : model.id
+				text : moment(model.get('created_at')).fromNow()
 			},
 			properties: {
 				itemId : model.id
