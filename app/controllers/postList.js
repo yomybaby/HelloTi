@@ -21,6 +21,9 @@ postCol.on('reset add',function(){
 			time : {
 				text : moment(model.get('created_at')).fromNow()
 			},
+			count : {
+				text : model.get('reviews_count')?model.get('reviews_count'):'0'
+			},
 			properties: {
 				itemId : model.id
 			}

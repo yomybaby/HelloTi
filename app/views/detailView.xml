@@ -1,5 +1,7 @@
 <Alloy>
 	<Window class="container">
 		<Label id="contentLabel">Detail</Label>
+		<Label id="reviewLabel"></Label>
+		<TextField id="reviewField"></TextField>
 	</Window>
 </Alloy>
