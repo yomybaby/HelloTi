@@ -7,7 +7,7 @@ var postCol = Alloy.Collections.instance('post');
 
 //2. 컬렉션의 이벤트 핸들러를 등록합니다.
 // 데이터를 다 가져오면 reset 이벤트가 발생함
-postCol.on('reset',function(){
+postCol.on('reset add',function(){
 	
 	var items = [];
 	
