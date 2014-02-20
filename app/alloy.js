@@ -9,12 +9,25 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+var AG = Alloy.Globals;
+AG.Cloud = require('ti.cloud');
 
-var postCol = Alloy.Collections.instance('post');
-
-// postCol.create({
-	// content : new Date()
-// });
+AG.Cloud.Users.login({
+    login: 'admin',
+    password: 'admin'
+}, function (e) {
+    if (e.success) {
+        var user = e.users[0];
+        alert('Success:\n' +
+            'id: ' + user.id + '\n' +
+            'sessionId: ' + AG.Cloud.sessionId + '\n' +
+            'first name: ' + user.first_name + '\n' +
+            'last name: ' + user.last_name);
+    } else {
+        alert('Error:\n' +
+            ((e.error && e.message) || JSON.stringify(e)));
+    }
+});
 
 
 

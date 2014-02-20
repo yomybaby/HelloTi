@@ -36,11 +36,6 @@ postCol.on('reset add',function(){
 postCol.fetch();
 
 
-
-
-
-
-
 $.listView.addEventListener('itemclick',function(e){
 	var clickModel = postCol.get(e.itemId);
 	var detailC = Alloy.createController('detailView',{
