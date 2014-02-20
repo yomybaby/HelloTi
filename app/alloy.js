@@ -12,9 +12,9 @@
 
 var postCol = Alloy.Collections.instance('post');
 
-postCol.create({
-	content : new Date()
-});
+// postCol.create({
+	// content : new Date()
+// });
 
 
 

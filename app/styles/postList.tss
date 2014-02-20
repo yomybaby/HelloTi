@@ -3,16 +3,24 @@
 	height : 100,
 }
 
-".commentCount" : {
-	left: 10
-}
-
 ".postContent" : {
 	top : 10,
-	left: 10
+	left: 10,
+	font : {
+		fontSize: 20
+	}
 }
+
+".commentCount" : {
+	left: 10,
+	top : 30,
+	color : 'gray'
+}
+
 ".time" : {
-	left: 10
+	left: 10,
+	top : 50,
+	color : 'gray'
 }
 ".wrap" : {
 	layout : 'vertical'

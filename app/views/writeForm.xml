@@ -1,0 +1,9 @@
+<Alloy>
+	<Window id="writeWindow" title="Tab 1">
+				<TextArea id="content"></TextArea>
+				<Button id="saveBtn" class="wirteBtn">저장</Button>				
+				<Button id="cancelBtn" class="wirteBtn">취소</Button>
+				<Label id="length"></Label>		
+				<Label platform="ios">i am iphone</Label>		
+			</Window>
+</Alloy>

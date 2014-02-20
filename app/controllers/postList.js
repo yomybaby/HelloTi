@@ -24,7 +24,7 @@ postCol.on('reset',function(){
 		};
 		
 		items.push(item); //배열에 추가
-	});
+	});	
 	
 	$.section.setItems(items); //섹션에 추가하기
 });
