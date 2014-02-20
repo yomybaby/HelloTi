@@ -9,3 +9,6 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+
+var postModel = Alloy.createModel('post');
+var postCol = Alloy.createCollection('post');
