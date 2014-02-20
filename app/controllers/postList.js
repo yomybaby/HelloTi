@@ -20,6 +20,9 @@ postCol.on('reset add',function(){
 			},
 			time : {
 				text : model.id
+			},
+			properties: {
+				itemId : model.id
 			}
 		};
 		
@@ -39,7 +42,10 @@ postCol.fetch();
 
 
 $.listView.addEventListener('itemclick',function(e){
-	var detailC = Alloy.createController('detailView');
+	var clickModel = postCol.get(e.itemId);
+	var detailC = Alloy.createController('detailView',{
+		model : clickModel
+	});
 	
 	
 	Alloy.Globals.mainTabGroup.activeTab.open(detailC.getView());

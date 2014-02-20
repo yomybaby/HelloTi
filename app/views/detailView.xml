@@ -1,5 +1,5 @@
 <Alloy>
 	<Window class="container">
-		<Label>Detail</Label>
+		<Label id="contentLabel">Detail</Label>
 	</Window>
 </Alloy>
