@@ -1,17 +1,14 @@
 <Alloy>
 	<Window>
-		<ListView>
+		<ListView id="listView">
 			<Templates>
 				<ItemTemplate name="aT" class="postT">
-					<View class="wrap">
-						<Label class="postContent">Post 내용</Label>
-						<Label class="commentCount">count</Label>
-						<Label class="time">time</Label>
-					</View>
+					<Label bindId="content" class="postContent">Post 내용</Label>
+					<Label bindId="count" class="commentCount">count</Label>
+					<Label bindId="time" class="time">time</Label>
 				</ItemTemplate>
 			</Templates>
-			<ListSection>
-				<ListItem template="aT"></ListItem>
+			<ListSection id="section">
 			</ListSection>
 		</ListView>
 	</Window>

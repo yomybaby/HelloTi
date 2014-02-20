@@ -1,3 +1,5 @@
+Alloy.Globals.mainTabGroup = $.index;
+
 $.index.open();
 
 $.content.addEventListener('change',function(ev){
