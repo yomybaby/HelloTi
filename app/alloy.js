@@ -18,11 +18,8 @@ AG.Cloud.Users.login({
 }, function (e) {
     if (e.success) {
         var user = e.users[0];
-        alert('Success:\n' +
-            'id: ' + user.id + '\n' +
-            'sessionId: ' + AG.Cloud.sessionId + '\n' +
-            'first name: ' + user.first_name + '\n' +
-            'last name: ' + user.last_name);
+        var toasty = Alloy.createWidget("toasty");
+			toasty.show("로그인 성공");
     } else {
         alert('Error:\n' +
             ((e.error && e.message) || JSON.stringify(e)));

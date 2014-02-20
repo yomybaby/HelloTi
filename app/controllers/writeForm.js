@@ -13,7 +13,9 @@ $.saveBtn.addEventListener('click', function(e) {
 	var postCol = Alloy.Collections.instance('post');
 	
 	postCol.create({
-		content : $.content.value
+		content : $.content.value,
+		photo : selectedImage,
+		'photo_sync_sizes[]' :'original',
 	},{
 		success: function(){
 			var toasty = Alloy.createWidget("toasty");
@@ -25,4 +27,34 @@ $.saveBtn.addEventListener('click', function(e) {
 	});
 	
 		
+});
+var selectedImage;
+$.picBtn.addEventListener('click', function(e) {
+	//갤러리 열기
+	
+	Ti.Media.openPhotoGallery({
+		success : function(e) {
+			$.preview.image = e.media;
+			selectedImage = e.media;
+		},
+		cancel : function() {
+		},
+		error : function(error) {
+			var message;
+			if (error.code == Ti.Media.NO_CAMERA) {
+				message = 'Device does not have video recording capabilities';
+			} else {
+				message = 'Unexpected error: ' + error.code;
+			}
+	
+			Ti.UI.createAlertDialog({
+				title : 'Camera',
+				message : message
+			}).show();
+		}
+	});
+	
+	
+	// 사진 선택하면 ...
+	
 });

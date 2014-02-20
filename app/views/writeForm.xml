@@ -4,6 +4,7 @@
 		<Button id="saveBtn" class="wirteBtn">저장</Button>
 		<Button id="cancelBtn" class="wirteBtn">취소</Button>
 		<Label id="length"></Label>
-		<Label platform="ios">i am iphone</Label>
+		<Button id="picBtn" class="wirteBtn">사진 선택하기</Button>
+		<ImageView id="preview"></ImageView>>
 	</Window>
 </Alloy>
