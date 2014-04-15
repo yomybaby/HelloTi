@@ -35,5 +35,9 @@
 	backgroundColor : 'red'
 }
 
+".blue" : {
+	color : 'blue'
+}
+
 
 

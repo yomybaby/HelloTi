@@ -1,20 +1,27 @@
 <Alloy>
 	<TabGroup>
+		<Tab title="Tab 2" icon="KS_nav_views.png">
+			<Window title="Tab 2">
+				<ListView id="listView">
+					<Templates>
+						<ItemTemplate name="myT">
+							<Label bindId="title"></Label>
+						</ItemTemplate>
+						<ItemTemplate name="blueT">
+							<Label bindId="title" class="blue"></Label>
+						</ItemTemplate>
+					</Templates>
+					<ListSection id="section">
+					</ListSection>
+				</ListView>
+			</Window>
+		</Tab>
 		<Tab title="Tab 1" icon="KS_nav_ui.png">
 			<Window title="Tab 1"  class="writeWindow">
 				<TextArea id="ta"></TextArea>>
 				<Button id="saveBtn" platform="android">저장</Button>
 				<Button id="saveBtn" platform="ios">저장 2</Button>
 				<Button id="cancelBtn">취소</Button>
-			</Window>
-		</Tab>
-		<Tab title="Tab 2" icon="KS_nav_views.png">
-			<Window title="Tab 2">
-				<ScrollableView id="scrollableView" showPagingControl="true">
-					<View id="view1" backgroundColor="#123" />
-					<View id="view2" backgroundColor="#246" />
-					<View id="view3" backgroundColor="#48b" />
-				</ScrollableView>
 			</Window>
 		</Tab>
 	</TabGroup>
