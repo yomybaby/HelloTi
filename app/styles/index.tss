@@ -31,6 +31,9 @@
 	backgroundColor : 'blue',
 	color : 'white'
 }
+"Button[platform=android]" : {
+	backgroundColor : 'red'
+}
 
 
 
