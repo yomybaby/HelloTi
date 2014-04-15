@@ -12,32 +12,5 @@
 	textAlign: 'center'
 } 
 
-".writeWindow" : {
-	layout : 'vertical'
-}
-
-"#ta" : {
-	borderColor : 'green',
-	top : 10,
-	left : 10,
-	right : 10,
-	height : 100
-}
-
-"Button" : {
-	top : 10,
-	left: 10,
-	right : 10,
-	backgroundColor : 'blue',
-	color : 'white'
-}
-"Button[platform=android]" : {
-	backgroundColor : 'red'
-}
-
-".blue" : {
-	color : 'blue'
-}
-
 
 

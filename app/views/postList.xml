@@ -2,11 +2,16 @@
 	<Window title="Tab 2">
 		<ListView id="listView">
 			<Templates>
-				<ItemTemplate name="myT">
-					<Label bindId="title"></Label>
+				<ItemTemplate name="imageT" class="imageT">
+					<ImageView bindId="thumb" class="thumb"></ImageView>
+					<Label bindId="content" class="content"></Label>
+					<Label bindId="name" class="name">jong</Label>
+					<Label bindId="date" class="date">2014.04.04</Label>
 				</ItemTemplate>
-				<ItemTemplate name="blueT">
-					<Label bindId="title" class="blue"></Label>
+				<ItemTemplate name="textT" class="textT">
+					<Label bindId="content" class="content noThumb"></Label>
+					<Label bindId="name" class="name noThumb">jong</Label>
+					<Label bindId="date" class="date">2014.04.04</Label>
 				</ItemTemplate>
 			</Templates>
 			<ListSection id="section"></ListSection>

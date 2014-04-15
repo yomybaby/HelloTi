@@ -1,0 +1,8 @@
+<Alloy>
+	<Window title="Tab 1"  class="writeWindow">
+		<TextArea id="ta"></TextArea>>
+		<Button id="saveBtn" platform="android">저장</Button>
+		<Button id="saveBtn" platform="ios">저장 2</Button>
+		<Button id="cancelBtn">취소</Button>
+	</Window>
+</Alloy>

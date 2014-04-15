@@ -2,21 +2,18 @@ var args = arguments[0] || {};
 
 $.section.setItems([
 	{
-		template : "myT",
-		title: {
+		template : "imageT",
+		content: {
 			text : 'WWWWW'
 		},
-		properties : {
-			
+		thumb : {
+			image : "http://icon.daumcdn.net/w/icon/1404/15/161406345.jpeg"
 		}
 	},
 	{
-		template : "blueT",
-		title: {
-			text : 'WWWWW'
-		},
-		properties : {
-			
+		template : "textT",
+		content: {
+			text : 'TextOnly'
 		}
 	}
 ]);
