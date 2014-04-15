@@ -1,7 +1,7 @@
 $.index.open();
 
 $.saveBtn.addEventListener('click', function(e) {
-	if(OS_IOS){
+	if(OS_DEV){
 		alert('save');
 	}else{
 		alert('Android Save');
@@ -9,6 +9,6 @@ $.saveBtn.addEventListener('click', function(e) {
 });
 
 $.cancelBtn.addEventListener('click', function(e) {
-	alert('cancel');
+	var toasty = Alloy.createWidget("toasty");
+	toasty.show("Hello World");
 });
-
