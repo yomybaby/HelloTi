@@ -1,0 +1,15 @@
+<Alloy>
+	<Window title="Tab 2">
+		<ListView id="listView">
+			<Templates>
+				<ItemTemplate name="myT">
+					<Label bindId="title"></Label>
+				</ItemTemplate>
+				<ItemTemplate name="blueT">
+					<Label bindId="title" class="blue"></Label>
+				</ItemTemplate>
+			</Templates>
+			<ListSection id="section"></ListSection>
+		</ListView>
+	</Window>
+</Alloy>
