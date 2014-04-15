@@ -1,11 +1,16 @@
 var args = arguments[0] || {};
 
+var postCol = Alloy.Collections.instance('post');
+
 $.saveBtn.addEventListener('click', function(e) {
-	if(OS_IOS){
-		alert('save');
-	}else{
-		alert('Android Save!');
-	}
+	postCol.create({
+		content : $.ta.value 
+	},{
+		success : function(){
+			$.ta.value = "";
+			$.ta.blur();
+		}
+	});
 });
 
 $.cancelBtn.addEventListener('click', function(e) {
