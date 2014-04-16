@@ -14,12 +14,12 @@ postCol.on('reset add',function(){
 	postCol.each(function(model){
 		Ti.API.info(model.attributes);
 		items.push({
-			template : model.get('image')?"imageT":"textT",
+			template : model.get('photo')?"imageT":"textT",
 			content: {
 				text : model.get('content')
 			},
 			thumb : {
-				image : model.get('image')
+				image : model.get('photo') && model.get('photo').urls && model.get('photo').urls.original
 			},
 			date : {
 				text : AG.moment(model.get('created_at')).fromNow()
