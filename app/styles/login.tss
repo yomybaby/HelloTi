@@ -1,0 +1,31 @@
+
+".container" : {
+  layout : 'vertical',
+  backgroundColor : 'white'
+}
+
+"TextField" : {
+	left :10,
+	right : 10,
+	borderColor : 'blue',
+	borderWidth : 1,
+	height : 40,
+	top: 10,
+	autocapitalization : false
+}
+
+"#password" : {
+	passwordMask : true
+}
+
+"#loginBtn" : {
+	left : 10,
+	right : 10,
+	top : 20,
+	height : 40,
+	font : {
+		fontSize : 20
+	},
+	backgroundColor : 'blue',
+	color : 'white'
+} 

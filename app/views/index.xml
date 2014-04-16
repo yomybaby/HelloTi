@@ -6,5 +6,10 @@
 		<Tab title="Tab 1" icon="KS_nav_ui.png">
 			<Require src="postWrite"></Require>
 		</Tab>
+		<Tab title="설정">
+			<Window title="설정">
+				<Button id="logoutBtn">로그아</Button>
+			</Window>
+		</Tab>
 	</TabGroup>
 </Alloy>
