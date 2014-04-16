@@ -15,6 +15,10 @@
 	borderWidth : 1
 }
 
+".imageT[if=Alloy.Globals.g4]" :{
+	backgroundColor : 'red'
+}
+
 ".textT" : {
 	backgroundColor : '#ccc',
 	height : 60

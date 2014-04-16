@@ -13,6 +13,8 @@
 var AG = Alloy.Globals;
 AG.moment = require('alloy/moment');
 
+Alloy.Globals.g4 = true;
+
 
 AG.Cloud = require('ti.cloud');
 
