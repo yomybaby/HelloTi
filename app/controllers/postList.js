@@ -2,13 +2,6 @@ var args = arguments[0] || {};
 
 var postCol = Alloy.Collections.instance('post');
 
-// postCol.create(
-	// {
-		// content : 'XXX',
-		// image : "http://icon.daumcdn.net/w/icon/1404/15/161406345.jpeg"
-	// }
-// );
-
 postCol.on('reset add',function(){
 	var items = [];
 	postCol.each(function(model){
@@ -27,7 +20,9 @@ postCol.on('reset add',function(){
 			name : {
 				text : model.get('user').username
 			},
-			
+			properties : {
+				itemId : model.id
+			}
 		});
 	});
 	$.section.setItems(items);
@@ -37,21 +32,12 @@ postCol.fetch();
 
 
 
-
-// $.section.setItems([
-	// {
-		// template : "imageT",
-		// content: {
-			// text : 'WWWWW'
-		// },
-		// thumb : {
-			// image : "http://icon.daumcdn.net/w/icon/1404/15/161406345.jpeg"
-		// }
-	// },
-	// {
-		// template : "textT",
-		// content: {
-			// text : 'TextOnly'
-		// }
-	// }
-// ]);
+$.listView.addEventListener('itemclick', function(e) {
+	
+	var clickModel = postCol.get(e.itemId);
+	
+	var detailC = Alloy.createController('postDetail',{
+		model : clickModel
+	});
+	AG.mainTabGroup.activeTab.open(detailC.getView());
+});

@@ -15,27 +15,6 @@
 	borderWidth : 1
 }
 
-".name" : {
-	left: 50,
-	top :5,
-	color : 'blue'
-}
-
-".content" : {
-	left : 50,
-	top : 30
-}
-
-".date" : {
-	right : 10,
-	top : 5,
-	color : 'gray'
-}
-
-".noThumb" : {
-	left : 10
-}
-
 ".textT" : {
 	backgroundColor : '#ccc',
 	height : 60

@@ -1,0 +1,8 @@
+<Alloy>
+	<Window class="container">
+		<Label id="name" class="name noThumb">jong</Label>
+		<Label id="date" class="date">2014.04.04</Label>
+		<Label id="content" class="content noThumb">asdlkfjlasjdf</Label>
+		<ImageView id="photo"></ImageView>
+	</Window>
+</Alloy>

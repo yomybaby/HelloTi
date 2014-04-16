@@ -1,4 +1,5 @@
 $.index.open();
+AG.mainTabGroup = $.index;
 
 var loginControl = Alloy.createController('login');
 loginControl.openIfNotLogin();

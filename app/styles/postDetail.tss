@@ -1,0 +1,11 @@
+
+".container" : {
+	backgroundColor :"white"
+}
+
+"#photo" : {
+	borderWidth : 1,
+	borderColor : 'gray',
+	width : 100,
+	height : 100
+}
