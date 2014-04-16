@@ -1,8 +1,8 @@
 <Alloy>
 	<TabGroup>
-		<Tab>
+		<!-- <Tab>
 			<Require src="web"></Require>
-		</Tab>
+		</Tab> -->
 		<Tab title="Tab 2" icon="KS_nav_views.png">
 			<Require src="postList"></Require>
 		</Tab>

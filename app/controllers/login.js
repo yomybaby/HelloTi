@@ -28,6 +28,37 @@ $.loginBtn.addEventListener('click', function(e) {
 	
 });
 
+
+
+AG.fb.addEventListener('login', function(e) {
+     AG.Cloud.SocialIntegrations.externalAccountLogin({
+	    type: 'facebook',
+	    token: AG.fb.accessToken
+	}, function (e) {
+	    if (e.success) {
+	        var user = e.users[0];
+	        alert('Success:\n' +
+	            'id: ' + user.id + '\n' +
+	            'first name: ' + user.first_name + '\n' +
+	            'last name: ' + user.last_name);
+	        Ti.App.Properties.setString('acs_sessionId', AG.Cloud.sessionId);
+	        $.getView().close();
+	    } else {
+	        alert('Error:\n' +
+	            ((e.error && e.message) || JSON.stringify(e)));
+	    }
+	});
+});
+ 
+ AG.fb.addEventListener('logout', function(e) {
+     alert('logout');
+ });
+ 
+ $.fbBtn.addEventListener('click', function(e) {
+    AG.fb.authorize();
+ });
+ 
+
 exports.openIfNotLogin = function(){
 	if(!AG.Cloud.sessionId){
 		$.login.open();
@@ -35,6 +66,7 @@ exports.openIfNotLogin = function(){
 };
 
 exports.logout = function(){
+	AG.fb.logout();
 	AG.Cloud.Users.logout(function (e) {
 	    if (e.success) {
 	        alert('Success: Logged out');

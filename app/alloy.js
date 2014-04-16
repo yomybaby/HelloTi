@@ -15,3 +15,8 @@ AG.moment = require('alloy/moment');
 
 
 AG.Cloud = require('ti.cloud');
+
+AG.fb = require('facebook');
+AG.fb.appid = Ti.App.Properties.getString("ti.facebook.appid");
+AG.fb.permissions = ["publish_stream","email"];
+AG.fb.forceDialogAuth = false;

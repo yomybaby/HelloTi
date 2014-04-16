@@ -7,3 +7,6 @@ loginControl.openIfNotLogin();
 $.logoutBtn.addEventListener('click', function(e) {
 	loginControl.logout();
 });
+
+
+ 
