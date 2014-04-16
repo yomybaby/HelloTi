@@ -21,7 +21,7 @@ exports.definition = {
 		_.extend(Collection.prototype, {
 			// extended functions and properties go here
 			comparator : function(model) {
-			  return model.get("content");
+			  return -AG.moment(model.get('created_at'));
 			}
 		});
 
