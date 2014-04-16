@@ -9,7 +9,8 @@ $.saveBtn.addEventListener('click', function(e) {
 		success : function(){
 			$.ta.value = "";
 			$.ta.blur();
-		}
+		},
+		wait : true
 	});
 });
 

@@ -9,3 +9,8 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+
+var AG = Alloy.Globals;
+AG.moment = require('alloy/moment');
+
+

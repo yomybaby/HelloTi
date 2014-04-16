@@ -12,6 +12,7 @@ var postCol = Alloy.Collections.instance('post');
 postCol.on('reset add',function(){
 	var items = [];
 	postCol.each(function(model){
+		Ti.API.info(model.attributes);
 		items.push({
 			template : model.get('image')?"imageT":"textT",
 			content: {
@@ -19,7 +20,14 @@ postCol.on('reset add',function(){
 			},
 			thumb : {
 				image : model.get('image')
-			}
+			},
+			date : {
+				text : AG.moment(model.get('created_at')).fromNow()
+			},
+			name : {
+				text : model.get('user').username
+			},
+			
 		});
 	});
 	$.section.setItems(items);
